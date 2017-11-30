@@ -1,7 +1,7 @@
 // JavaScript Document
 
 
-     var Coursel=(function(sect){
+     function Coursel(sect){
 	     this.sect=document.getElementById(sect);
 		 this.choose=this.sect.getElementsByTagName("div")[0];
 		 this.img=this.sect.getElementsByTagName("img");
@@ -11,7 +11,7 @@
 		 this.exdex=0;
 		 this.begin=null;
 		 this.start();
-		})()
+		}
 
 		 //开始函数
 		 Coursel.prototype.start=function(){
